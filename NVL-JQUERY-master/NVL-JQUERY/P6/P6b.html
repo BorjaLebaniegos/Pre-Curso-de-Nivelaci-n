@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Ejercicio P6b de JQuery</title>
+  </head>
+
+  <body>
+
+	    <ul>
+   <li id="andalucia" class="even"><span>Andalucía</span></li>
+   <li id="aragon" class="odd"><span>Aragón</span></li>
+   <li id="asturias" class="even"><span>Asturias</span></li>
+   <li id="canarias" class="odd"><span>Canarias</span></li>
+   <li id="cantabria" class="even"><span>Cantabria</span></li>
+   <li id="castilla-leon" class="odd"><span>Castilla y León</span></li>
+   <li id="castilla-la-mancha" class="even"><span>Castilla La Mancha</span></li>
+   <li id="cataluña" class="odd"><span>Cataluña</span></li>
+   <li id="ceuta" class="even"><span>Ceuta</span></li>
+   <li id="madrid" class="odd"><span>Comunidad de Madrid</span></li>
+   <li id="valencia" class="even"><span>Comunidad Valenciana</span></li>
+   <li id="extremadura" class="odd"><span>Extremadura</span></li>
+   <li id="galicia" class="even"><span>Galicia</span></li>
+   <li id="baleares" class="odd"><span>Islas Baleares</span></li>
+   <li id="rioja" class="even"><span>La Rioja</span></li>
+   <li id="melilla" class="odd"><span>Melilla</span></li>
+   <li id="navarra" class="even"><span>Navarra</span></li>
+   <li id="pais-vasco" class="odd"><span>País Vasco</span></li>
+   <li id="murcia" class="even"><span>Región de Murcia</span></li>
+</ul>
+	   
+
+<script>
+
+     $(document).ready(function() {
+ 	    $( "ul li" ).css("background-color", "orange").css("list-style", "none");
+ 	    $( "ul li" ).filter(".even").css("color", "white");
+ 	    $( "ul li" ).filter(".odd").css("color", "purple");
+        $( "#castilla-la-mancha" ).height(10).css("color", "green");
+        $( "#murcia" ).insertAfter("#madrid").css("color", "blue");
+		
+//: He rehecho esta línea clonando sólo la lista ul y a añadiendo a la nueva lista ul una nueva clase para poder borrar los elementos que no me interesan.
+		 $("ul").clone().addClass( "nueva" ).insertAfter("ul");	
+		$("ul li").slice( 0 , 5 ).detach();
+		$("ul.nueva li").slice( 5 , 19 ).detach();
+		
+	
+//: solución para volver a insertar el 5º elemento de la lista original.		
+       
+       $("#cantabria").clone().insertBefore("#castilla-leon");
+
+//: Crea un nuevo elemento, en la segunda lista para insertar a la Isla de Perejil, sólo en la lista nueva que he creado.	
+       
+	    $( "ul.nueva" ).append( "<li id= perejil class= odd><span>Isla de Perejil</span></li>" );
+		$( "#perejil" ).css("background-color", "Indigo").css("list-style", "none").css("color", "white");
+    });
+
+</script>
+		
+
+
+	
+</body>
+	
+</html>

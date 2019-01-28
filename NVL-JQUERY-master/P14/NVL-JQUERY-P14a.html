@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Jquery P14a<</title>
+	
+	<style>
+			
+			img {
+			   width: 350px;
+			   height: 350px;
+			   Display: inline;
+			   margin: 5px;
+			   
+			}
+	
+	</style>
+	
+  </head>
+	
+    <body>
+		
+		
+		<div style="margin-left: 100px; margin-top: 50px;" id= "container"> 
+			 
+			 <img src="https://cdn.dogbuddy.com/dogbuddy.com/images/resized/4_30_904406239_resized_3_1.jpg" alt="cuidadora con una mascota" class = "foto1">
+			 <img src="https://s04.s3c.es/imag/_v0/640x450/6/b/2/resorts-perros4.jpg" alt="foto de perros jugando" class = "foto2">	
+			 <img src="https://blogperrosgatos.files.wordpress.com/2014/04/esterilizacion.jpg" alt="Veterinario curando a un perro" class = "foto3"> 
+		</div>
+		
+		
+	
+	
+	           <script>
+                     $(document).ready(function() {
+						 $( "body" ).css("background-color", "YellowGreen ").css("cursor", "crosshair");
+						 var inicio='';
+						 $("img").mousemove(function(event) {
+								console.log(event.pageX);
+								if(inicio == ''){
+									inicio = event.pageX;
+								} else {
+									if(event.pageX - inicio > 10) {
+										inicio = '';
+										var opacityActual = $(this).css("opacity");
+										console.log("OPACITY " + opacityActual);
+										$( this ).css("opacity", opacityActual - 0.1); 
+									} else  {
+										inicio = '';
+										var opacityActual = $(this).css("opacity");
+										console.log("OPACITY " + opacityActual);
+										$( this ).css("opacity", opacityActual + 1);
+									}
+								}
+								
+								console.log(event.pageY);
+								if(inicio == ''){
+									inicio = event.pageY;
+								} else {
+									if(event.pageY - inicio > 10) {
+										inicio = '';
+										var opacityActual = $(this).css("opacity");
+										console.log("OPACITY " + opacityActual);
+										$( this ).css("opacity", opacityActual - 0.1); 
+									} else  {
+										inicio = '';
+										var opacityActual = $(this).css("opacity");
+										console.log("OPACITY " + opacityActual);
+										$( this ).css("opacity", opacityActual + 1);
+									}
+								}						
+							});						 
+	                      });
+							 
+				
+						
+					  
+						 
+				
+				
+
+				</script>
+	
+    </body>
+	
+				
+
+</html>
