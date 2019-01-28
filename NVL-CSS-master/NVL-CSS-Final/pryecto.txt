@@ -1,0 +1,10 @@
+Me falta un poco de creatividad, por lo que quizar la web me quede un poco fea; no se muy bien que poner (sólo se me ocurre poner muchos lorem ipsum).
+t
+1º He realizado la estructura en HTML: he creado un header como título, tres sección distintas para crear esas tres columnas distintas y un footer. En la parte superior de la web, encima del header, voy a colocar una imagen que abarque todo el ancho de la web de manera que debajo del header y de la imagen queden las tres columnas.Además al final de la página pondré un footer con la información de contacto, copyrights etc.
+
+2º La descripción del proyecto me ha generado varias dudas pero como no hay nada de feedback en el pre-curso de nivel he seguido adelante con esas dudas de saber lo que quieren realmente las personas que corrijan el este ejercicio.
+
+3º He entendido que en la primera columna tiene que haber unos enlaces que al ser pulsado te redirijan a los posts de la columna central (que está al lado, y por lo tanto apenas se notará nada pues los post estarán al lado de los enlaces de la columna central. Mi opinión, tal y como se explica en las instrucciones no tiene mucho sentido. Lo lógico sería que los enlaces de la primera columna te enviaran a otra página de la web con el artículo en cuestion).
+   En cuanto a la tercera columna, me deja aun más perdido. Pone que pongamos referencias a post (otra vez lo mismo) pero esta vez destacados. Pero sé si dentro de la página o si lo que se busca es que pongamos enlaces a otras páginas. Pues tal y como está detallado el proyecto se dá a entender que todo el contenido tienen tiene que estar dentro de la misma página (me refiero al mismo fichero html. Pues no dice que se tengas que realizar distintos ficheros, uno más para los artículos que se enlazan en la columna central y otro más para los artículos destacado.
+
+4º Me he puesto a tratar de darle forma a todo esto con CSS.
