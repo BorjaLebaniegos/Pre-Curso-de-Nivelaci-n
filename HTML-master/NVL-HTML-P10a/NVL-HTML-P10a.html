@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio de Formularios</title>
+  </head>
+<body>
+
+			<form method="post" action="miservidor.php">
+			    
+			    <div>
+			      <label for=”Codigo Postal”>Código Postal:</label>
+			      <input id=”Codigo Postal” type=”text”>
+			    </div>
+
+			   <div>
+			      <label for=”Satisfaccion”>Satisfacción:</label>
+			      <select id=”Satisfaccion”>
+			        <option value=”Excelente”>5</option>
+			        <option value=”Muy bueno”>4</option>
+			        <option value=”Bueno”>3</option>
+			        <option value=”Malo”>2</option>
+			        <option value=”Muy malo”>1</option>
+			      </select>
+			  </div>
+
+			  <div>
+			  	  <label for=”Email”>Email:</label>
+			      <input id=”Email” type=”text”>
+			  </div> 
+
+			  <div>
+			    <label for=”Puntos positivos del producto”>Puntos positivos del producto:</label>
+			    <textarea id=”Puntos positivos del producto”></textarea>
+			  </div>
+
+			  <div>
+			    <label for=”Puntos Negativos del producto”>Puntos Negativos del producto:</label>
+			    <textarea id=”Puntos Negativos del producto”></textarea>
+			  </div>
+
+			  
+			    <!-- Ustedes han pedido que utilicemos dos formas distintas para el listado de características pero creo que sólo es válida la primera que voy a utilizar -->
+
+			    <!-- Creo que esta es la única forma correcta para esta parte del ejercicio. No me gusta como vé después en el navegador-->
+			  
+			  <div>
+			      <label for=”Calidad”>Calidad:</label>
+			      <select id=”Calidad”>
+			        <option value=”Excelente”>Excelente</option>
+			        <option value=”Bueno”>Bueno</option>
+			        <option value=”Regular”>Regular</option>
+			        <option value=”Pésimo”>Pésimo</option>
+			      </select>
+			  </div>
+			  
+		
+			  <div>
+			      <label for=”Usabilidad”>Usabilidad:</label>
+			      <select id=”Usabilidad”>
+			        <option value=”Excelente”>Excelente</option>
+			        <option value=”Bueno”>Bueno</option>
+			        <option value=”Regular”>Regular</option>
+			        <option value=”Pésimo”>Pésimo</option>
+			      </select>
+			  </div>
+
+			  <!-- Creo que utilizar esta forma es incorrecta. Me genera dudas -->
+			  <div>
+			      <label for=”Durabilidad”>Durabilidad:</label>
+			      <input name=”Durabilidad” type=”radio” value=”A”>Excelente
+			      <input name=”Durabilidad” type=”radio” value=”B”>Bueno
+			      <input name=”Durabilidad” type=”radio” value=”C”>Regular
+			      <input name=”Durabilidad” type=”radio” value=”D”>Pésimo
+			  </div>
+
+			  <input type=”submit” value=”Enviar”> 
+			</form>
+
+
+
+</body>
+</html>

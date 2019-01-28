@@ -1,0 +1,6 @@
+1º Primero he realizado la página de quienes somos dividiendola en dos secciones (quienes somos y las instalaciones). Además he añadido algunas fotos de ejemplo. Tambien he intentado poner un menu con las secciones principales enlazandolas a su correspondiente sección. Por último he añadido la un link para volver al principio de la página son hacer scrolling y he añadido un footer.
+2º He realizado la página de nuestros servicios siguiendo un estilo similar al anterior, solo que sin usar <section>.
+3º He realizado la página de precios.
+4º He realizado un formulario de contacto introduciendo una novedad. He usado <button> en lugar de summit para crear un boton que al pulsar envíe directamente los datos completados.
+
+Además he utilizado algunos símbolos para añadir espacio entre los menús y no quedan apilados y tamvbién el <br> para establecer espacio entre las imagenes textos etc.
